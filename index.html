@@ -3,140 +3,169 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>LH Automotores - Venta de Vehículos</title>
+  <title>LH Automotores - Santa Rosa</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       margin: 0;
-      background-color: #f8f9fa;
+      background-color: #f7f7f7;
       color: #333;
     }
-
     header {
-      background-color: #20232a;
+      background: linear-gradient(90deg, #111, #444);
       color: #fff;
-      padding: 1.5rem;
       text-align: center;
+      padding: 1.5rem 0;
     }
-
-    h1 {
+    header h1 {
       margin: 0;
-      font-size: 1.8rem;
+      font-size: 2.2rem;
+      letter-spacing: 1px;
     }
-
+    header p {
+      margin-top: .3rem;
+      color: #ccc;
+    }
     .container {
       max-width: 1100px;
       margin: 2rem auto;
       padding: 0 1rem;
     }
-
+    h2 {
+      text-align: center;
+      color: #222;
+      margin-bottom: 2rem;
+    }
     .autos {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
       gap: 1.5rem;
     }
-
     .card {
-      background: #fff;
+      background-color: white;
       border-radius: 10px;
-      box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
       overflow: hidden;
-      transition: transform 0.2s ease;
+      transition: transform .25s ease;
     }
-
     .card:hover {
-      transform: scale(1.02);
+      transform: scale(1.03);
     }
-
     .card img {
       width: 100%;
       height: 200px;
       object-fit: cover;
     }
-
     .card-content {
       padding: 1rem;
     }
-
     .card-content h3 {
-      margin: 0 0 0.5rem;
-      font-size: 1.2rem;
-      color: #20232a;
+      margin-top: 0;
+      color: #111;
     }
-
     .card-content p {
-      margin: 0.3rem 0;
+      margin: .3rem 0;
+      font-size: .95rem;
     }
-
-    footer {
-      text-align: center;
-      padding: 1rem;
-      background: #20232a;
-      color: #fff;
-      margin-top: 2rem;
-    }
-
     .whatsapp {
-      display: inline-block;
-      background: #25d366;
+      display: block;
+      text-align: center;
+      background-color: #25d366;
       color: #fff;
       text-decoration: none;
-      padding: 0.8rem 1.2rem;
-      border-radius: 6px;
-      margin-top: 1rem;
       font-weight: bold;
+      padding: .8rem;
+      border-radius: 5px;
+      margin-top: .8rem;
+      transition: background-color .2s;
+    }
+    .whatsapp:hover {
+      background-color: #1ebe5d;
+    }
+    footer {
+      background-color: #111;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 3rem;
+      font-size: .9rem;
+    }
+    @media (max-width: 600px) {
+      .card img {
+        height: 180px;
+      }
     }
   </style>
 </head>
 <body>
+
   <header>
-    <h1>LH Automotores 🚗</h1>
-    <p>Compra y venta de vehículos en Santa Rosa, La Pampa</p>
+    <h1>LH Automotores 🚘</h1>
+    <p>Compra y venta de vehículos - Santa Rosa, La Pampa</p>
   </header>
 
-  <div class="container">
-    <h2>Vehículos disponibles</h2>
+  <main class="container">
+    <h2>Vehículos Disponibles</h2>
     <div class="autos">
-      <div class="card">
-        <img src="src/chevrolet.jpg">
-        <div class="card-content">
-          <h3>Chevrolet Cruze 2020</h3>
-          <p>Precio: $13.500.000</p>
-          <p>Kilometraje: 45.000 km</p>
-          <p>Ubicación: Santa Rosa, La Pampa</p>
-        </div>
-      </div>
 
+      <!-- VEHÍCULO 1 -->
       <div class="card">
-        <img src="src/ecosport.jpg">
+        <img src="https://source.unsplash.com/600x400/?toyota,hilux" alt="Toyota Hilux">
         <div class="card-content">
-          <h3>Ford EcoSport 2019</h3>
-          <p>Precio: $12.000.000</p>
-          <p>Kilometraje: 52.000 km</p>
-          <p>Ubicación: Santa Rosa, La Pampa</p>
-        </div>
-      </div>
-
-      <div class="card">
-        <img src="src/toyota.jpg">
-        <div class="card-content">
-          <h3>Toyota Hilux 2021</h3>
+          <h3>Toyota Hilux SRV 4x4 2021</h3>
           <p>Precio: $24.000.000</p>
           <p>Kilometraje: 35.000 km</p>
+          <p>Combustible: Diesel</p>
           <p>Ubicación: Santa Rosa, La Pampa</p>
+          <a class="whatsapp" href="https://wa.me/5492954000000?text=Hola! Estoy interesado en la Toyota Hilux SRV 2021." target="_blank">📲 Contactar por WhatsApp</a>
         </div>
       </div>
-    </div>
 
-    <div style="text-align:center;">
-      <a class="whatsapp" href="https://wa.me/5492954000000" target="_blank">
-        📞 Contactar por WhatsApp
-      </a>
+      <!-- VEHÍCULO 2 -->
+      <div class="card">
+        <img src="https://source.unsplash.com/600x400/?chevrolet,cruze" alt="Chevrolet Cruze">
+        <div class="card-content">
+          <h3>Chevrolet Cruze LT 2020</h3>
+          <p>Precio: $13.500.000</p>
+          <p>Kilometraje: 45.000 km</p>
+          <p>Combustible: Nafta</p>
+          <p>Ubicación: Santa Rosa, La Pampa</p>
+          <a class="whatsapp" href="https://wa.me/5492954000000?text=Hola! Estoy interesado en el Chevrolet Cruze LT 2020." target="_blank">📲 Contactar por WhatsApp</a>
+        </div>
+      </div>
+
+      <!-- VEHÍCULO 3 -->
+      <div class="card">
+        <img src="https://source.unsplash.com/600x400/?ford,ecosport" alt="Ford EcoSport">
+        <div class="card-content">
+          <h3>Ford EcoSport 1.6 SE 2019</h3>
+          <p>Precio: $12.000.000</p>
+          <p>Kilometraje: 52.000 km</p>
+          <p>Combustible: Nafta</p>
+          <p>Ubicación: Santa Rosa, La Pampa</p>
+          <a class="whatsapp" href="https://wa.me/5492954000000?text=Hola! Estoy interesado en la Ford EcoSport 1.6 SE 2019." target="_blank">📲 Contactar por WhatsApp</a>
+        </div>
+      </div>
+
+      <!-- VEHÍCULO 4 -->
+      <div class="card">
+        <img src="https://source.unsplash.com/600x400/?peugeot,208" alt="Peugeot 208">
+        <div class="card-content">
+          <h3>Peugeot 208 Allure 2022</h3>
+          <p>Precio: $15.800.000</p>
+          <p>Kilometraje: 18.000 km</p>
+          <p>Combustible: Nafta</p>
+          <p>Ubicación: Santa Rosa, La Pampa</p>
+          <a class="whatsapp" href="https://wa.me/5492954000000?text=Hola! Estoy interesado en el Peugeot 208 Allure 2022." target="_blank">📲 Contactar por WhatsApp</a>
+        </div>
+      </div>
+
     </div>
-  </div>
+  </main>
 
   <footer>
-    <p>© 2025 LH Automotores - Santa Rosa, La Pampa</p>
+    <p>© 2025 LH Automotores | Santa Rosa, La Pampa</p>
   </footer>
+
 </body>
 </html>
