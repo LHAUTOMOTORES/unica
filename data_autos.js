@@ -7,7 +7,7 @@ export const AUTOS = [
     km: "85.000 km",
     price_ars: "3.800.000",
     price_usd: "11.000",
-    image_local: "/autos/corolla.svg",
+    image_local: "/src/toyota,jpg",
     image_remote: "https://images.unsplash.com/photo-1549921296-3a8b1b1b3a4b?auto=format&fit=crop&w=1200&q=60",
     desc: "Único dueño, service oficial, caja automática."
   },
